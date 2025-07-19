@@ -38,37 +38,34 @@ class Buffer {
     }
 }
 
-// async function fetchLines(url, func) {
-//     const res = await fetch(url);
-//     const body = res.body
-//         ?.pipeThrough(new TextDecoderStream());
+async function fetchLines(url, func) {
+    const res = await fetch(url);
+    const body = res.body
+        ?.pipeThrough(new TextDecoderStream());
 
-//     if (!body) throw new Error("No response body");
+    if (!body) throw new Error("No response body");
 
-//     const reader = readLines(body);
+    const reader = readLines(body);
 
-//     for await (const line of reader) {
-//         func(line)
-//     }
-// }
+    for await (const line of reader) {
+        func(line)
+    }
+}
 
-// async function search(query, compare = (a, b) => a.toLowerCase().includes(b.toLowerCase())) {
-//     const lineBuffer = new Buffer(10, 1000);
-//     const results = [];
-//     await fetchLines("./transcript.txt", (line) => {
-//         lineBuffer.add(newLine);
-//         let target = lineBuffer.contents[6] || ""
-//         if (compare(target, query)) {
-//             results.push({
-//                 epID: target.slice(0, 3),
-//                 context: lineBuffer.contents
-//             })
-//         }
-//     });
-//     return results;
-// }
+async function search(query, compare = (a, b) => a.toLowerCase().includes(b.toLowerCase())) {
+    const lineBuffer = new Buffer(10, 1000);
+    const results = [];
+    await fetchLines("https://raw.githubusercontent.com/Hester-Clapp/mlp-script-search/refs/heads/main/transcript.txt", (newLine) => {
+        lineBuffer.add(newLine);
+        let target = lineBuffer.contents[6] || ""
+        if (compare(target, query)) {
+            results.push({
+                epID: target.slice(0, 3),
+                context: lineBuffer.contents
+            })
+        }
+    });
+    return results;
+}
 
-// console.log(await search("gingerbread"))
-
-import transcript from "./transcript.txt" assert { type: "text" };
-console.log(transcript);
+console.log(await search("gingerbread"))
