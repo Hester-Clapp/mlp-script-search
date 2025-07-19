@@ -37,8 +37,8 @@ class CircularBuffer {
 }
 
 async function stream(checkLine) {
-    const res = await fetch("https://raw.githubusercontent.com/Hester-Clapp/mlp-script-search/refs/heads/main/small.txt");
-    // let res = await fetch("https://raw.githubusercontent.com/Hester-Clapp/mlp-script-search/refs/heads/main/transcript.txt");
+    // const res = await fetch("https://raw.githubusercontent.com/Hester-Clapp/mlp-script-search/refs/heads/main/small.txt");
+    const res = await fetch("https://raw.githubusercontent.com/Hester-Clapp/mlp-script-search/refs/heads/main/transcript.txt");
     if (!res.body) throw new Error("no response body");
 
     const stream = res.body.pipeThrough(new TextDecoderStream());
@@ -67,12 +67,12 @@ async function stream(checkLine) {
 }
 
 export async function search(query, check = target => target.toLowerCase().includes(query.toLowerCase())) {
-    const lineBuffer = new CircularBuffer(10, 1000);
+    const lineBuffer = new CircularBuffer(8, 1000);
     const results = [];
 
     function checkLine(line) {
         lineBuffer.add(line);
-        let targetLine = lineBuffer.contents[6] || "";
+        let targetLine = lineBuffer.contents[4] || "";
         if (check(targetLine)) {
             results.push(lineBuffer.contents);
         }

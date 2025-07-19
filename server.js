@@ -1,3 +1,4 @@
+import { search, searchRegex } from './search.js'
 let isBun = typeof Bun !== 'undefined' // detect Bun vs Deno
 
 // nasty code to make it work with both Bun and Deno Deploy
@@ -24,3 +25,24 @@ if (isBun) {
 } else Deno.serve(app.fetch)
 
 app.get('/', serveStatic({ path: "./web/index.html" }))
+
+// search form
+app.post("/search", async (c) => {
+    const body = await c.req.formData();
+    const query = body.get("query");
+    const mode = body.get("mode");
+    let results
+    if (mode === "exact") {
+        results = await search(query);
+        return c.json(results);
+    }
+    if (mode === "regex") {
+        let slashNotation = query.match(/\/(.*)\/([a-z]*)/)
+        if (slashNotation) {
+            results = await searchRegex(slashNotation[1], slashNotation[2] || "");
+        } else {
+            results = await searchRegex(query, body.get("flags") || "");
+        }
+        return c.json(results);
+    }
+});  
