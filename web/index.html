@@ -44,7 +44,7 @@
             display: block;
             padding: 10px 15px;
             font-size: 20px;
-            background-color: hotpink;
+            background-color: #EC0B8F;
             color: white;
             border: none;
             border-radius: 5px;
@@ -52,27 +52,36 @@
             margin: 15px auto;
         }
 
-        #results>div {
+        #results>h2 {
+            margin: 0;
+        }
+
+        #results>details {
             margin: 2rem;
             padding: 0;
             background-color: #f9f9f9;
             border-radius: 15px;
-            border: 1rem solid hotpink;
+            border: 1rem solid #EC0B8F;
         }
 
-        #results>div h3 {
+        #results>details summary {
             margin-top: 0;
-            background-color: hotpink;
-            padding: 1rem;
+            padding: 0.5rem;
             color: white;
+            cursor: pointer;
         }
 
-        #results>div p {
+        #results>details summary h3 {
+            display: inline;
+            margin: 0 1ch;
+        }
+
+        #results>details p {
             margin: 1rem;
         }
 
         span.match {
-            color: cornflowerblue;
+            color: #00B1CC;
         }
     </style>
 </head>
@@ -106,9 +115,11 @@
             <button type="submit">&#x1F50D;&#xFE0E; Search</button>
         </form>
     </div>
-    <div style="width: 80%; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+    <div style="width: 80%; margin: 1rem auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
         <h2>Search Results:</h2>
+        <div id=""></div>
         <div id="results"></div>
+        <button id="loadMore" style="display: none;">Load More</button>
     </div>
 </body>
 <script>
@@ -2099,6 +2110,10 @@
         "931": "Harvesting Memories",
         "932": "Memories and More"
     }
+    const colours = ["#883E97", "#EC0B8F", "#EF67A5", "#3C0F62", "#00B1CC"];
+    function getColour(index) {
+        return colours[Number(index) % colours.length];
+    }
 </script>
 <script>
     function parseLine(line) {
@@ -2132,26 +2147,46 @@
         searchButton.innerHTML = `&#x1F50D;&#xFE0E; Search`
         searchButton.disabled = false;
 
-        const scenes = await res.json(); // <-- process JSON response
+        const results = await res.json(); // <-- process JSON response
         document.querySelector("div#results").innerHTML = ""; // clear previous results
 
-        if (formData.get("mode") === "sentence") {
-            console.log(scenes)
-        } else {
-            scenes.forEach(scene => {
-                let lines = scene.map(parseLine);
-                document.querySelector("div#results").innerHTML += `
-            <div>
-                <h3>${lines[5].episode}</h3>
-            ${lines.map((line, i) => {
-                    let query = document.querySelector("#queryField").value;
-                    return (line.speaker !== "Unknown" ? `<p><b>${line.speaker}</b>: ` : "<p>") + (query ? line.text.replace(new RegExp(`(${query})`, "gi"), `<span class="match">$1</span>`) : line.text) + "</p>"
-                }).join("")}
-            </div >`;
-            });
-            if (scenes.length === 0) {
+        function display(results) {
+            let currentPage = 0
+            function render() {
+                results.slice(currentPage * 20, (++currentPage) * 20).forEach(scene => {
+                    let lines = scene.map(parseLine)
+                    let episode = lines[4].episode;
+                    let script = lines.map((line, i) => {
+                        let query = document.querySelector("#queryField").value;
+                        return (line.speaker !== "Unknown" ? `<p><b>${line.speaker}</b>: ` : "<p>") + (query ? line.text.replace(new RegExp(`(${query})`, "gi"), `<span class="match">$1</span>`) : line.text) + "</p>"
+                    }).join("");
+                    let colour = getColour(scene[4].slice(0, 1))
+                    document.querySelector("div#results").innerHTML += `
+                        <details open style="border-color: ${colour};">
+                            <summary style="background-color: ${colour};" onclick="window.scrollTo({ top: this.getBoundingClientRect().top + window.scrollY - 30 });"><h3>${episode}</h3></summary>
+                            ${script}
+                        </details>`;
+                });
+            }
+
+            let loadMoreButton = document.querySelector("button#loadMore");
+            loadMoreButton.addEventListener("click", render)
+            loadMoreButton.style.display = "block"; // show the load more button
+            render(); // initial render
+
+            if (results.length === 0) {
                 document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
             }
+        }
+
+        if (formData.get("mode") === "sentence") {
+            let currentPhrase = 0;
+
+
+
+            display(results[currentPhrase].scenes);
+        } else {
+            display(results)
         }
     });
 </script>
