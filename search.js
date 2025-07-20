@@ -88,7 +88,7 @@ export async function searchRegex(query, flags = "") {
 }
 export async function searchSentence(sentence) {
     function filterResults(scenes, query) {
-        return scenes.filter(lines => lines[4].includes(query)) // Remove results that do not match the rest of the sentence
+        return scenes.filter(lines => new RegExp(`\\b${query}\\b`).test(lines[4])) // Remove results that do not match the rest of the sentence
     }
     function subSentence(length) {
         return words.slice(0, length).join(" ");
