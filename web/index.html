@@ -92,6 +92,11 @@
                     Exact
                     <input type="radio" name="mode" value="exact" checked>
                 </label>
+                <label
+                    title="Search for a sequence of scenes that can be spliced together to form the sentence entered">
+                    Sentence
+                    <input type="radio" name="mode" value="sentence">
+                </label>
                 <label title="Search for lines matching a regular expression">
                     Regex
                     <input type="radio" name="mode" value="regex">
@@ -2129,19 +2134,24 @@
 
         const scenes = await res.json(); // <-- process JSON response
         document.querySelector("div#results").innerHTML = ""; // clear previous results
-        scenes.forEach(scene => {
-            let lines = scene.map(parseLine);
-            document.querySelector("div#results").innerHTML += `
+
+        if (formData.get("mode") === "sentence") {
+            console.log(scenes)
+        } else {
+            scenes.forEach(scene => {
+                let lines = scene.map(parseLine);
+                document.querySelector("div#results").innerHTML += `
             <div>
                 <h3>${lines[5].episode}</h3>
             ${lines.map((line, i) => {
-                let query = document.querySelector("#queryField").value;
-                return (line.speaker !== "Unknown" ? `<p><b>${line.speaker}</b>: ` : "<p>") + (query ? line.text.replace(new RegExp(`(${query})`, "gi"), `<span class="match">$1</span>`) : line.text) + "</p>"
-            }).join("")}
+                    let query = document.querySelector("#queryField").value;
+                    return (line.speaker !== "Unknown" ? `<p><b>${line.speaker}</b>: ` : "<p>") + (query ? line.text.replace(new RegExp(`(${query})`, "gi"), `<span class="match">$1</span>`) : line.text) + "</p>"
+                }).join("")}
             </div >`;
-        });
-        if (scenes.length === 0) {
-            document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
+            });
+            if (scenes.length === 0) {
+                document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
+            }
         }
     });
 </script>

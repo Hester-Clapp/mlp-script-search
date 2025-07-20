@@ -84,3 +84,24 @@ export async function search(query, check = target => target.toLowerCase().inclu
 export async function searchRegex(query, flags = "") {
     return await search(query, target => new RegExp(query, flags).test(target));
 }
+export async function searchSentence(sentence) {
+    function filterResults(scenes, query) {
+        return scenes.filter(lines => lines[4].includes(query)) // Remove results that do not match the rest of the sentence
+    }
+    function subSentence(length) {
+        return words.slice(0, length).join(" ");
+    }
+
+    let words = typeof sentence === "string" ? sentence.split(" ") : sentence;
+    if (words.length === 0) return [];
+
+    let i = 0
+    let results = await search(words[0]);
+    let filtered = results
+    for (i = 0; filtered.length > 0 && i < words.length; i++) {
+        results = filtered
+        filtered = filterResults(filtered, subSentence(i + 2));
+    }
+
+    return [{ sentence: subSentence(i), scenes: results }].concat(await searchSentence(words.slice(i))); // Add the rest of the sentence
+}

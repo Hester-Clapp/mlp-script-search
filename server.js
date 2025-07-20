@@ -1,4 +1,4 @@
-import { search, searchRegex } from './search.js'
+import { search, searchSentence, searchRegex } from './search.js'
 let isBun = typeof Bun !== 'undefined' // detect Bun vs Deno
 
 // nasty code to make it work with both Bun and Deno Deploy
@@ -34,6 +34,10 @@ app.post("/search", async (c) => {
     let results
     if (mode === "exact") {
         results = await search(query);
+        return c.json(results);
+    }
+    if (mode === "sentence") {
+        results = await searchSentence(query);
         return c.json(results);
     }
     if (mode === "regex") {
