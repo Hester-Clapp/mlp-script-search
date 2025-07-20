@@ -124,6 +124,7 @@
 </body>
 <script>
     const speakers = [
+        "Unknown",
         "Narrator",
         "Narrator, Twilight Sparkle",
         "Twilight Sparkle",
@@ -1725,7 +1726,7 @@
         const formData = new FormData(form);
 
         let searchButton = document.querySelector("button[type=submit]");
-        searchButton.disabled = true; // disable submit button
+        searchButton.disabled = true; // disable submit button to prevent spamming search queries
         searchButton.innerHTML = `<img src="./loading.gif"> Searching...`
 
         const res = await fetch("/search", {
@@ -1763,26 +1764,31 @@
             }
 
             let loadMoreButton = document.querySelector("button#loadMore");
-            loadMoreButton.addEventListener("click", render)
+            loadMoreButton.onclick = render
             loadMoreButton.style.display = "block"; // show the load more button
             render(); // initial render
-
-            if (results.length === 0) {
-                document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
-            }
         }
 
         if (formData.get("mode") === "sentence") {
             document.querySelector("div#phrases").innerHTML = ""; // clear previous sentence
-            results.forEach((result, i) => {
-                let button = document.createElement("button");
-                button.innerHTML = result.phrase
-                button.addEventListener("click", display.bind(null, result.scenes, result.phrase));
-                document.querySelector("div#phrases").appendChild(button);
-            }).join("")
-            display(results[0].scenes, results[0].phrase);
+            console.log(results)
+            if (results.some(result => result.scenes.length === 0)) { // Some phrases have no results
+                document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
+            } else {
+                results.forEach((result, i) => {
+                    let button = document.createElement("button");
+                    button.innerHTML = result.phrase
+                    button.addEventListener("click", display.bind(null, result.scenes, result.phrase));
+                    document.querySelector("div#phrases").appendChild(button);
+                })
+                display(results[0].scenes, results[0].phrase);
+            }
         } else {
-            display(results)
+            if (results.length === 0) {
+                document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
+            } else {
+                display(results)
+            }
         }
     });
 </script>

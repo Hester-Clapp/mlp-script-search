@@ -66,11 +66,13 @@ async function stream(checkLine) {
     }
 }
 
-export async function search(query, check = target => target.toLowerCase().includes(query.toLowerCase())) {
+export async function search(query, check = target => new RegExp(`\\b${query}\\b`).test(target) && !new RegExp(`\\[[^\\]]*${query}`).test(targetLine)) {
     const lineBuffer = new CircularBuffer(8, 1000);
     const results = [];
 
     function checkLine(line) {
+        if (results.length >= 1024) return // Limit number of results to 1024 to avoid excessive load
+
         lineBuffer.add(line);
         let targetLine = lineBuffer.contents[4] || "";
         if (check(targetLine)) {
@@ -97,6 +99,7 @@ export async function searchSentence(sentence) {
 
     let i = 0
     let results = await search(words[0]);
+    if (results.length === 0) return [{ phrase: words.join(" "), scenes: [] }]
     let filtered = results
     for (i = 0; filtered.length > 0 && i < words.length; i++) {
         results = filtered
