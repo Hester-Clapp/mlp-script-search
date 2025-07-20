@@ -66,7 +66,7 @@ async function stream(checkLine) {
     }
 }
 
-export async function search(query, check = target => new RegExp(`\\b${query}\\b`).test(target) && !new RegExp(`\\[[^\\]]*${query}`).test(targetLine)) {
+export async function search(query, check = target => new RegExp(`\\b${query}\\b`, "i").test(target) && !new RegExp(`\\[[^\\]]*${query}`, "i").test(target)) {
     const lineBuffer = new CircularBuffer(8, 1000);
     const results = [];
 

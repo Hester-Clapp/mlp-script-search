@@ -1752,7 +1752,7 @@
                     let lines = scene.map(parseLine)
                     let episode = lines[4].episode;
                     let script = lines.map((line, i) => {
-                        return (line.speaker !== "Unknown" ? `<p><b>${line.speaker}</b>: ` : "<p>") + (query ? line.text.replace(new RegExp(`(${query})`, "gi"), `<span class="match">$1</span>`) : line.text) + "</p>"
+                        return (line.speaker !== "Unknown" ? `<p><b>${line.speaker}</b>: ` : "<p>") + (query ? line.text.replace(new RegExp(`\\b(${query})\\b`, "gi"), `<span class="match">$1</span>`) : line.text) + "</p>"
                     }).join("");
                     let colour = getColour(scene[4].slice(0, 1))
                     document.querySelector("div#results").innerHTML += `
@@ -1769,11 +1769,11 @@
             render(); // initial render
         }
 
+        document.querySelector("div#phrases").innerHTML = ""; // clear previous sentence blocks
         if (formData.get("mode") === "sentence") {
-            document.querySelector("div#phrases").innerHTML = ""; // clear previous sentence
-            console.log(results)
-            if (results.some(result => result.scenes.length === 0)) { // Some phrases have no results
-                document.querySelector("div#results").innerHTML = "<p>No results found.</p>";
+            let emptyResults = results.filter(result => result.scenes.length === 0)
+            if (emptyResults.length > 0) { // Some phrases have no results
+                document.querySelector("div#results").innerHTML = `<p>No results found for "${emptyResults[0].phrase.split(" ")[0]}".</p>`;
             } else {
                 results.forEach((result, i) => {
                     let button = document.createElement("button");
