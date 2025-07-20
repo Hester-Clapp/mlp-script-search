@@ -103,5 +103,5 @@ export async function searchSentence(sentence) {
         filtered = filterResults(filtered, subSentence(i + 2));
     }
 
-    return [{ sentence: subSentence(i), scenes: results }].concat(await searchSentence(words.slice(i))); // Add the rest of the sentence
+    return [{ phrase: subSentence(i), scenes: results }].concat(await searchSentence(words.slice(i))); // Add the rest of the sentence
 }
