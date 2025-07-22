@@ -2115,11 +2115,11 @@ Fluttershy: She's mysterious.
 Rainbow Dash: Sinister.
 Pinkie Pie: And spoooooky!
 Twilight Sparkle: [groans]
-All but Twilight: [gasp]
+Mane Six except Twilight: [gasp]
 Twilight Sparkle: Will you cut that out?
 Rarity: Just look at those stripes! So garish!
 Twilight Sparkle: She's a zebra.
-All but Twilight: A what?!
+Mane Six except Twilight: A what?!
 Twilight Sparkle: A zebra, and her stripes aren't a fashion choice, Rarity. They're what she was born with.
 Rarity: [faints]
 Applejack: Born where? I've never seen a pony like that in these parts, 'cept... her!
@@ -3630,7 +3630,7 @@ Twilight Sparkle: Oh my!
 Fluttershy: It's... perfect!
 Rainbow Dash: It's cool!
 Applejack: Why, they're the best duds I ever did see.
-All except Rarity: It's exactly what I asked for!
+Mane Six except Rarity: It's exactly what I asked for!
 Rarity: [sighs]
 Twilight Sparkle: Thank you, Rarity.
 Pinkie Pie: Are you as happy with them as we are? Huh? Huh? Huh?
@@ -12474,12 +12474,12 @@ Cheerilee: Yes?
 Sweetie Belle: What's an editor-in-chief?
 Cheerilee: Good question, Sweetie Belle. I like those reporter's instincts. The Foal Free Press is a student-run paper. I'm only involved as an adviser, so the editor-in-chief is the pony in charge, from choosing the stories to making sure it gets to press on time. Now, as I said, we have a new editor this year!
 [door opens]
-Students: Diamond Tiara?!
+Young Six: Diamond Tiara?!
 Diamond Tiara: Hm.
 Cheerilee: I'll leave you alone now to discuss everypony's assignments. Have fun!
 [door closes]
 Diamond Tiara: Alright, listen up. The Foal Free Press is a joke.
-Students: Huh?
+Young Six: Huh?
 Diamond Tiara: Nopony at this school takes it seriously. Well I, the editor-in-chief in charge, am going to deliver us to newfound glory!
 [pause]
 Truffle: Yay!
@@ -12679,7 +12679,7 @@ Diamond Tiara: [growls]
 Cheerilee: And for the next editor of the Foal Free Press...
 Diamond Tiara: [blows raspberry]
 Cheerilee: ...here's your new editor-in-chief, Featherweight!
-Students: [cheering]
+Young Six: [cheering]
 Diamond Tiara: Ugh! Him? But what about me?!
 Shady Daze: Here ya go! I've been promoted to staff photographer!
 [camera snaps]
@@ -17299,7 +17299,7 @@ Rainbow Dash: Whoa, whoa, whoa, heh. How are we supposed to protect Equestria?
 Rarity: How are we meant to rein Discord in if we can't use the Elements to turn him back to stone?
 Applejack: Twilight... The Elements of Harmony... They're what keep us connected no matter what.
 Twilight Sparkle: You're right about one thing, Applejack. The Elements of Harmony did bring us together. But it isn't the Elements that will keep us connected. It's our friendship. And it's more important and more powerful than any magic. My new role in Equestria may mean I have to take on new responsibilities, and our friendships may be tested, but it will never, ever be broken. There's no time to lose. Everypony ready?
-All except Twilight: Ready! [gasp]
+Mane Six except Twilight: Ready! [gasp]
 [whirring]
 Discord: [thud] Oh, poo.
 Princess Celestia: We know how difficult it must have been for you to give up the Elements. It took great courage to relinquish them.
@@ -17814,7 +17814,7 @@ Flight to the Finish
 Cheerilee: Today, we have two special guests with a very special announcement! Everypony, welcome the head of the Equestria Games, Ms. Harshwhinny!
 Ms. Harshwhinny: Thank you. Now, I'm sure you all know about the Equestria Games, where ponies from all over the land compete for glory in various athletic pursuits. Well, now you littlest ones will have the chance to compete for a weighty responsibility of your very own.
 Rainbow Dash: [distant] Oh, come on! Tell 'em the fun part!
-Students: [Oohing and ahhing]
+Young Six: [Oohing and ahhing]
 Rainbow Dash: That's right! All you gotta do is show Ms. Harshwhinny the coolest, most spectacular, most rocking routine and you're going to the Games! So who's going to be the lucky ponies?!
 Diamond Tiara: It's gotta be me!
 Aura: Maybe it's me!
@@ -17875,9 +17875,9 @@ And we're playing to win as we gallop to glory
 We can conquer any challenge we're in
 We've got hea-a-a-arts, hearts strong as horses
 Hearts strong as horses
-Crusaders: Whoa!
+Cutie Mark Crusaders: Whoa!
 [thud]
-Crusaders: Oof!
+Cutie Mark Crusaders: Oof!
 [clapping]
 Diamond Tiara: If that's the best you've got, we're going to win for sure.
 Silver Spoon: We already have the most divine routine planned.
@@ -17901,7 +17901,7 @@ Scootaloo: Since the dawn of recorded time, in one town of amazing amazingness, 
 Apple Bloom: We are Earth ponies!
 Sweetie Belle: We are unicorns!
 Scootaloo: We are Pegasi! And the town where friendship reigns is our home. Now, welcome to the stadium, the flag of the place we love best...
-Crusaders: Ponyville forever! Yay!
+Cutie Mark Crusaders: Ponyville forever! Yay!
 Scootaloo: It's kind of a work in progress. So? What did you think?
 Rainbow Dash: That was ama— [thinking] Wait. Hold on now. Gotta stay calm, cool and collected. [aloud] To give a calm, clear analysis— wait. You whipped that act together just yesterday?! That is— [thinking] Professionalism, Dash, keep those emotions in check! [aloud] Overall, it was... kinda, sorta... [quickly] overall, it was okay. Keep working hard. Who knows? You might have a shot. Gotta go!
 Apple Bloom: Do y'all think she liked it?
@@ -18043,7 +18043,7 @@ We can conquer any challenge we're in
 We've got hea-a-a-arts, hearts strong as horses
 Hearts strong as horses
 [crowd cheering]
-Crusaders: Ponyville forever! Yay!
+Cutie Mark Crusaders: Ponyville forever! Yay!
 [microphone feedback]
 Ms. Harshwhinny: [through microphone] In the Equestria Games, the Ponyville flag will be carried by... 'Cutie Mark Crusaders'!
 [crowd cheering]
@@ -18052,12 +18052,12 @@ Rainbow Dash: Ahem. Look. What you three did was... acceptable.
 Ms. Harshwhinny: Acceptable? Acceptable?! Why, it was totally stupendously the single most amazing thing I've ever seen! [laughs]
 Rainbow Dash: Contain your excitement, Ms. Harshwhinny. Remember – professionalism.
 Ms. Harshwhinny: Ahem. Y-Yes, well, I- [laughs nervously]
-Rainbow Dash and Crusaders: [laughing]
+Rainbow Dash and Cutie Mark Crusaders: [laughing]
 Scootaloo: You know what this means, right?
 Apple Bloom: What?
 Scootaloo: We are totally gonna get cutie marks in flag-carrying!
 Apple Bloom and Sweetie Belle: Yeah!
-Crusaders: [laughing]
+Cutie Mark Crusaders: [laughing]
 [credits]
 Power Ponies
 [pages flipping]
@@ -18236,7 +18236,7 @@ Mane-iac: Hum Drum? Little guy? No superpowers whatsoever? [laughs] He's utterly
 [hairspray hissing]
 Mane-iac: Puh-lease. Everypony knows you just keep him around because you [condescending tone] feel sowwy for him. Wah. Wah.
 Twilight Sparkle: Maybe in your world. But in our world, Spike— uh, Hum Drum always comes through when we need him! Always!
-Power Ponies except Twilight Sparkle: [agreements]
+Mane Six except Twilight Sparkle: [agreements]
 Spike: I'm not like Hum Drum! When my friends really need me, I do come through! And they need me now!
 Mane-iac: [laughs] I see dementia must be a side-effect of prolonged exposure to the Hairspray Ray of Doom. [laughs] Tonight, we stand upon the brink of immortality, for we collectively—though, mostly me—have finally defeated our most hated nemeses! We have hurled the brush of badness into the now fearful face of [laughs] goodness, and have struck a blow for freedom in the name of oppression! And nothing will stop us! [laughs]
 [chain rattling]
@@ -20544,7 +20544,7 @@ You're gonna find it, gonna find
 You've got the music
 Got the music, got the music
 Got the music in you!
-Mane Six except Fluttershy: [cheering]
+Mane Six except Fluttershy or Rarity: [cheering]
 Rainbow Dash: You did it, Fluttershy!
 Applejack: See? That wasn't so bad.
 Pinkie Pie: And you didn't look completely petrified by the fact that we're all staring at you at all!
@@ -22955,7 +22955,7 @@ Rainbow Dash: That was awesome!
 Mane Six except Rainbow Dash: [various exclamations of praise]
 Princess Cadance: I just wanted to thank you personally for saving those ponies and the Games, O Great and Honorable Spike the Brave and Glorious. You must be very proud.
 Spike: I guess.
-All present characters except Spike: You guess?!
+Mane Six except Spike, Princess Celestia, Princess Luna, Princess Cadance: You guess?!
 Spike: I just saw what needed to be done and reacted. Just so happens I can breathe fire and... if any of you could do that, you'd have done the same.
 Applejack: Forgive me for bein' blunt, Spike, but you're not makin' a lick of sense.
 Spike: Well, it's just how I feel.
@@ -26365,7 +26365,7 @@ Spike: [inhales]
 Moon Dancer: Slumber 101? I've read that.
 Twilight Sparkle: Oh! [chuckles] Really? Well, uh, did you know Lemon Hearts here works at the Canterlot palace?
 Lemon Hearts: Uh, yeah. It's true. I do the big events mostly. State dinners, that sort of thing.
-All except Moon Dancer: [awkward noises]
+Minuette, Spike, Twilight Sparkle and Twinkleshine: [awkward noises]
 Moon Dancer: Ugh!
 [teleportation zap]
 Twilight Sparkle: Moon Dancer! [teleportation zap] You've gotta give friendship a chance!
@@ -28893,7 +28893,7 @@ Mane Six except Twilight Sparkle: [laughing]
 Discord: No? Nothing?
 Twilight Sparkle: Are you sure there's not something you've missed? Some other detail about your lunch together that you're forgetting?
 Discord: Well, I don't know about the rest of you, but I feel we've been pretty exhaustive in our attempts to recreate every single detail of our previous encounter.
-Mane cast except Twilight Sparkle: [general agreement]
+Mane Six except Twilight Sparkle: [general agreement]
 Rainbow Dash: Yeah, Twilight. If you don't get it by now, I don't think you're ever gonna get it.
 Twilight Sparkle: But it is really important that I figure this out. It's for the good of all Equestria!
 [ticker tape machine whirring]
@@ -33370,7 +33370,7 @@ Rainbow Dash: Uh... Quibble?
 Quibble Pants: Sorry!
 The Cart Before the Ponies
 [students chattering]
-Students: Good morning, Miss Cheerilee!
+Young Six: Good morning, Miss Cheerilee!
 Cheerilee: Good morning, everypony! I hope you brought your thinking caps, because today we're going to learn about physics!
 Scootaloo: Physics?
 Cheerilee: Mm-hmm! Specifically, the use of force in energy conversions! In this case, using mechanical work to convert potential energy into kinetic energy!
@@ -33398,7 +33398,7 @@ Sweetie Belle: Me too!
 Apple Bloom: Me three!
 Cheerilee: Just remember, everypony. Your cart has to be able to finish the race if you want to win one of the awards. Fastest – for winning the race, naturally. Most traditional – for the best working replica of an original Applewood cart. And most creative – for the cart with the best overall design.
 Apple Bloom: [dreamily] Hoo-wee! Those ribbons are the bees' knees.
-Students: [dreamily] Uh-huh...
+Young Six: [dreamily] Uh-huh...
 Cheerilee: All right then, class! You've got a lot to learn if you want to build a race cart.
 [students groaning]
 Snips: Aww... I knew there was gonna be a catch!
@@ -33766,7 +33766,7 @@ Pinkie Pie: They got me good.
 Applejack: Well, she needs to stop.
 Pinkie Pie: Stop? But pranks are so much fun!
 Twilight Sparkle: Not for everypony. And it doesn't seem like Dash is taking the time to find out who enjoys them and who doesn't.
-All except Twilight: [grumble]
+Mane Six except Twilight: [grumble]
 Rarity: Uh, since you and Dash share such an, uh, affinity for pranking, we thought you might be able to get her to, um, uh... quit it!
 Pinkie Pie: Hey, Rainbow Dash! I have something very important to tell you!
 Rainbow Dash: Pinkie, hey! I actually have something totally important to tell you!
@@ -38054,7 +38054,7 @@ Twilight Sparkle: Wow, Fluttershy! I've never heard you speak with such convicti
 Rarity: Oh! That was exquisite!
 Rainbow Dash: Pretty awesome.
 Fluttershy: Oh, thank you, everypony. You all taught me so much about building my confidence over the years. It's because of your friendship that I finally feel able to make my dream project a reality. But I can't build the sanctuary alone. Will you join me?
-All except Fluttershy: [eager agreement]
+Mane Six except Fluttershy: [eager agreement]
 Applejack: I'm happy to offer my extra hooves to ya. Huh. But come to think of it, I actually know a filly who'd be more help than I would. She's a friend of mine from Winona's sheep-herdin' competitions – Wrangler! Heh. She's an expert in animal enclosures.
 Fluttershy: How lovely!
 Pinkie Pie: Ooh-ooh-ooh! I know somepony, too! Hard Hat is the best construction pony in Ponyville. He can build anything you could ever, ever, ever want!
@@ -44111,7 +44111,7 @@ Can't teach bein' honest, not sure what to do
 I'm quite certain I'm lost
 [Mane Six except Twilight Sparkle]
 None of us has a clue!
-[Students]
+[Young Six]
 School of Friendship, another class
 Wish it were more of a blast
 Thought this school would be more fun
@@ -44123,15 +44123,15 @@ Can't mess up, can't afford a mistake now
 No way to have fun
 [Fluttershy]
 Oh, what have I done?
-[Students]
+[Young Six]
 Bored with this class
 [Twilight Sparkle]
 Think "success", keep it firmly in sight
-[Students]
+[Young Six]
 Wish that we could leave en masse!
 [Mane Six except Twilight Sparkle]
 We don't have a clue
-[Students]
+[Young Six]
 Listen to this one request
 Make things fun, we're really stressed
 [Twilight Sparkle]
@@ -44439,7 +44439,7 @@ Silverstream: You guys! I just found stairs!
 [beat]
 Gallus: Aaaand we care because...?
 Silverstream: Stairs are awesome! We don't have anything like 'em underwater, 'cause you know, [magic zap] no way to climb 'em!
-Students except Silverstream: Ohhhh.
+Young Six except Silverstream: Ohhhh.
 [magic zap]
 Silverstream: This place has everything! If only my family back home could see it...
 [thump]
@@ -44493,7 +44493,7 @@ Silverstream: Did you see that?! Rainbow Dash was like voooooom and then werrrrr
 Smolder: Yeah, we all just lived it. But you're right. That was pretty amazing. Even by dragon standards.
 [puckwudgie noises]
 Twilight Sparkle: Is everycreature alright?
-Students: [general agreement]
+Young Six: [general agreement]
 Spike: [panting] You're lucky we got here in time!
 Starlight Glimmer: You know, this probably isn't the safest place for a campout.
 Ocellus: Does that mean you're going to send us back to our homes?
@@ -44524,7 +44524,7 @@ Ember: How? You can't even get inside!
 [magic noises]
 [chains shattering]
 Twilight Sparkle: School is back in session!
-Students: [cheering]
+Young Six: [cheering]
 [magic warbling]
 Neighsay: Who dared remove my seal?
 Twilight Sparkle: I did, Chancellor Neighsay! And I respectfully ask you to step aside, or classes will start late.
@@ -44590,7 +44590,7 @@ Some things you just can't teach with books
 Some things you only know
 So trust your heart and let us lead
 And your friendship's sure to grow
-[Students]
+[Young Six]
 And once we master kindness
 We will spread it 'cross this land
 [All]
@@ -45131,7 +45131,7 @@ Rarity: Indeed. You have all the inner strength you need, but I think we prefer 
 Applejack, Pinkie Pie, Rainbow Dash, and Twilight Sparkle: [laughing]
 Rarity: And that's just given me the inspiration I'm looking for!
 Rarity: And last one... There! The missing piece for my new collection – the Warrior of Inner Strength!
-[mane cast and ponies cheering and applauding]
+[Mane Six and ponies cheering and applauding]
 [raccoons chittering]
 Pony: Oh, gorgeous!
 Fluttershy: Oh, it's lovely, Rarity! I'm just sorry you had to leave the Canterlot Royal Fashion Show early.
@@ -47096,12 +47096,12 @@ Cutie Mark Crusaders: Whoa!
 [thud]
 Cutie Mark Crusaders: [oohing and ahhing]
 Fluttershy: All right, students! It's time to meet some new friends!
-Students: [excited chatter]
+Young Six: [excited chatter]
 Cutie Mark Crusaders: [oohing and ahhing]
 Applejack: Incomin'! [grunts]
-Students: [laughter]
+Young Six: [laughter]
 Applejack: That's friendship in action, y'all!
-Students: [excited chatter]
+Young Six: [excited chatter]
 Sweetie Belle: Wow! And I thought our school was fun!
 Scootaloo: Yeah! Miss Cheerilee never lets us play buckball in class. I know. I've tried.
 Apple Bloom: Hey! Why don't we go here instead? It's still school, right?
@@ -47133,7 +47133,7 @@ Sweetie Belle: Can't you just give us a chance?
 Cutie Mark Crusaders: Pleeeeeeeeeeeaaaase?
 Twilight Sparkle: You need Cheerilee's classes, not mine. Hurry up. You don't want late marks on your permanent record.
 [door opens]
-Students: O dragon! My dragon!
+Young Six: O dragon! My dragon!
 Twilight Sparkle: Spike?! What did you do?
 Spike: [laughs nervously]
 [door closes]
@@ -47594,7 +47594,7 @@ Rarity: Well, if we're all being honest, I can't survive with just this tiny yet
 Pinkie Pie: [to Twilight Sparkle] I'm sorry that you thought that I thought your plan was lame. Your plans are the most un-lamest!
 Rainbow Dash: And I always have fun when we're all together. Even if it's learning pretending to be fun.
 Twilight Sparkle: So... does that mean you still want to have the retreat?
-All except Twilight Sparkle and Fluttershy: Yes!
+Mane Six except Twilight Sparkle or Fluttershy: Yes!
 Fluttershy: If everypony likes me again.
 All: [laughing]
 Twilight Sparkle: Let's get to that Tree. I have the whole campsite set up and ready.
@@ -47664,7 +47664,7 @@ Twilight Sparkle: [giggles]
 Silverstream: [excited squeal] Learning and fun?! Does it get any better than that?!
 Gallus: You've been underwater a long time, haven't you?
 Twilight Sparkle: Gallus and Silverstream, sounds like you're our first pair!
-Students: [gasp]
+Young Six: [gasp]
 Twilight Sparkle: What? They'll make a great team.
 [cutie mark glowing]
 Yona: Um, why pony glowing?
@@ -47705,10 +47705,10 @@ Starlight Glimmer: Huh?
 Discord: [through mock tears] I hate goodbyes, don't you? I just go to pieces.
 [pop!]
 Starlight Glimmer: Discord! What a... heh... nice surprise! This is your first time at our new school, isn't it?
-Discord 1: Oh, was I not invited to the grand opening?
+Discord: Oh, was I not invited to the grand opening?
 Discord 2: Friends and Family Day?
 Discord 3: Baccalaureate?
-All three Discords: I hadn't noticed.
+All Discords: I hadn't noticed.
 [flash]
 Starlight Glimmer: Well, at least you're here now. Um, why are you here now?
 Discord: To fill in for Twilight, of course, as head-draconequus. I seem to recall a whole song about how this school is where you make your own rules. Now, who better at that than me?
@@ -47776,14 +47776,14 @@ Starlight Glimmer: You hired a tree as a teacher?!
 Discord: Its schedule was free.
 Spike: Uh, guys? That's not just any tree.
 Smolder: [sneezes]
-Students: [scream]
+Young Six: [scream]
 Spike: [blows nose] It's a dragon-sneeze tree.
 Smolder: [sneezes]
-Students: [scream]
+Young Six: [scream]
 Starlight Glimmer: W-W-W-Wait! Calm down, everycreature! It's gonna be okay!
 Yona: [yells] BE MY FRIEEEEENNNND!
 Discord: Mmmm, my, my, my. You do seem like you're in over your head. Won't Twilight be so disappointed with how you're ruining—I mean, running her school?
-Students: [screaming]
+Young Six: [screaming]
 Starlight Glimmer: Discord!
 Discord: [munching]
 Starlight Glimmer: This is all your fault!
@@ -47802,7 +47802,7 @@ Spike: Well, it's kinda what he does. Even to ponies or dragons he cares about.
 Starlight Glimmer: Oh, well, I'm ready for him. I told Twilight I'd run her school right, and I'm gonna keep that promise. No matter what.
 [nighttime ambience]
 Starlight Glimmer: Good morning, students! I know there's been a little bit of adjustment since the professors left for their trip. But I've brought in new new teachers. And now everything should run smoothly. Now it's time for class. And don't forget, this afternoon is the Spell-venger Hunt!
-Students: [chattering]
+Young Six: [chattering]
 [door slams open]
 [stock gasp sound]
 Discord: [California accent] Yo! Greetings, fellow creatures!
@@ -47829,7 +47829,7 @@ Trixie: Magic is the most important element of friendship. So, today I, the Grea
 Discord: [snaps fingers]
 [Pigasus squeals]
 [ursa major roaring]
-Students: [scream]
+Young Six: [scream]
 Discord: [chuckles] I'm learning so much. Aren't you?
 Trixie: [growls] Discord!
 [doors close]
@@ -47843,7 +47843,7 @@ Discord: Take a lap, team!
 Sandbar: Uh, actually, we just finished Professor Spitfire's workout.
 Discord: Sounds like somepony needs a little motivation. [blows whistle]
 [flash]
-Students: [gasp, scream]
+Young Six: [gasp, scream]
 [bugbear growls]
 Silverstream: I've never run so fast in my life! Oh, this is great!
 Sandbar: [pants] Hey, coach, we need a break.
@@ -47865,7 +47865,7 @@ Discord: My problem? How is the fact that Twilight decided to put an incompetent
 Starlight Glimmer: [gasps, yells]
 [zap!]
 [crackles]
-Students: [shudder]
+Young Six: [shudder]
 Starlight Glimmer: [nervous laughter] Don't worry. I just banished him from school grounds forever. He's fine.
 Spike: That probably made things worse. Why didn't you just talk to Discord?
 Starlight Glimmer: Because he's right about one thing. I've been doing a terrible job as headmare.
@@ -47878,9 +47878,9 @@ Starlight Glimmer: For this afternoon's Spell-venger Hunt, you'll need to use th
 Spike: Twilight left the list of your hunt partners before she left. I'll pass out the shields.
 Starlight Glimmer: Ready... set... Spell-venger Hunt!
 [gong strikes]
-Students: [chattering]
+Young Six: [chattering]
 Spike: C'mon! We can use Twilight's observatory to watch the teams!
-Students: [chatter continues]
+Young Six: [chatter continues]
 Smolder: I hope you know where you're going.
 Ocellus: To the Helm of Yksler!
 Smolder: Eh, works for me.
@@ -48119,7 +48119,7 @@ Yona: [voiceover] Calves in family pick out perfect smashing log. Then yaks smas
 Yona: [voiceover] Then yak family build perfect snow fort... and smash it!
 [crash!]
 Yona: [voiceover] Then we hang perfect things on perfect moss pile and—
-All except Yona: You smash it.
+Young Six except Yona: You smash it.
 Yona: What you think yaks are, barbarians? Moss pile is for special family rituals. Last year, ritual for Yona.
 Yona: [voiceover] All yak family gather around Yona and braid Yona hair for first time.
 Gallus: So, to recap... Your holiday is about smashing things and family.
@@ -48155,7 +48155,7 @@ Smolder: You already live in Ponyville. Staying here over break is no big deal.
 Yona: School of Friendship good place for pony to have pony holiday.
 Sandbar: I'd still rather spend it with my family at home. Oh! That reminds me! I have the best holiday story ever! It's called...
 Sandbar: [voiceover] "The Day My Hearth's Warming Doll Almost Fell into the Fire!"
-All except Sandbar: [sounds of awe]
+Young Six except Sandbar: [sounds of awe]
 Sandbar: [voiceover] Just before we went to bed, my mom, my dad, and my sister all put our Hearth's Warming Dolls up on the mantel, just like we do every year. But this year, I put my doll too close to the edge, and it fell!
 Sandbar: [in slow motion] Nooooooo!
 Ocellus: [gasps] And?!
@@ -48196,9 +48196,9 @@ Gallus: Guys, stop it.
 Smolder: Or maybe whoever did it is only pretending to be upset to throw us off.
 Ocellus: Me?! But I didn't!
 Gallus: Come on, let it go.
-All except Gallus: [arguing]
+Young Six except Gallus: [arguing]
 Sandbar: Come on! Ocellus, you know you did it! Just fess up!
-All except Gallus: [shouting]
+Young Six except Gallus: [shouting]
 Gallus: I said, stop fighting! That's not what the holidays are about! No matter what you call them or how you celebrate! D-Do you know how lucky you all are? With your stories about sharing and-and kindness and getting together with everycreature that you care about?
 Ocellus: But griffons do that too, don't they?
 Smolder: Some holiday about a moon?
@@ -48211,7 +48211,7 @@ Gallus: [voiceover] That's just his name. He's not anygriff's actual grandpa. I 
 Gallus: Then I came here and, well, met all of you. So I don't want to go home for the break. And that's why... I did it!
 Yona: [gasps] Griffon mess up decorations?!
 Gallus: Yeah. It was me. I put goo powder in the Fire of Friendship.
-All except Gallus: [gasps]
+Young Six except Gallus: [gasps]
 Sandbar: So it wasn't Ocellus?
 Ocellus: Why would you ruin things for us?
 Gallus: I didn't plan to! I just figured if I made a mess, our teachers would make us stay to clean up. We'd be together a little longer.
@@ -48638,7 +48638,7 @@ Rarity:
 I suppose we're just not friends anymore!
 Rainbow Dash:
 I guess we're just not friends anymore!
-Students: [gasp]
+Young Six: [gasp]
 [pencils scribbling]
 Rarity: ...And then there was the time Rainbow Dash called my Cloudsdale Couture Boutique idea "impractical"! Imagine that! Just because I needed Twilight to perform the butterfly wing spell on me whenever I wanted to deliver merchandise!
 Rainbow Dash: ...And I told her a thousand times Pegasi don't even want restrictive heavy dresses! We need to be able to fly! Duh!
@@ -49872,7 +49872,7 @@ Fluttershy: [gasps]
 Rockhoof: And I say, "Sorry you won't be having any dinner tonight, lass! Guess you'll just have to... grin and bear it!"
 [students laughing]
 Rockhoof: And then I tossed her away with my shovel high into the sky! And she's been a constellation up there ever since! Or so I'm told. And that's the end of my story.
-Students: One more story! One more story!
+Young Six: One more story! One more story!
 Rockhoof: No, no. Thank you for listening. But it's time to say goodbye.
 Twilight Sparkle: Wait. You said there wasn't anything in this time you were good at. What about telling stories?
 Rockhoof: It was just a tall tale.
@@ -50311,9 +50311,9 @@ It even burnt our... bread
 Sorry, I forgot how much I love rhyming. Where was I? Oh, right!
 My happy village lay in ruins
 Relationships got worse
-Spoiler alert: we quickly learned
+Spoiler alert - we quickly learned
 That words could be a curse
-No more talking,: yelled our leader
+No more talking yelled our leader
 The last thing said aloud
 Into the Stream of Silence
 We stepped as a crowd
