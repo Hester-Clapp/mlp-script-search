@@ -1608,53 +1608,140 @@ const speakers = {
     "Mane Six, Spike, Starlight Glimmer": 1350
 }
 
-const outputFile = Bun.file("./transcript2.txt")
-const writer = outputFile.writer()
+async function writeTranscript() {
+    const outputFile = Bun.file("./transcript.txt")
+    const writer = outputFile.writer()
 
-let episodeID = 101
-let currentSpeaker = 0
-let speakerID = "000"
-console.clear()
-await streamAndIterate("./raw.txt", line => {
-    line = line.trim()
-    let episode = titleMap?.[line]
-    if (episode) {
-        episodeID = episode
-        console.log(`Episode ${episodeID} ${line.trim()}`)
-    } else {
-        let text = ""
-        if (line[0] === "[") {
-            // Stage Direction
-            text = line.trim();
-
-            currentSpeaker = speakers?.[text.slice(1, -1)] || 0;
-            speakerID = currentSpeaker.toString(16).padStart(3, "0")
+    let episodeID = 101
+    let currentSpeaker = 0
+    let speakerID = "000"
+    console.clear()
+    await streamAndIterate("./raw.txt", line => {
+        line = line.trim()
+        let episode = titleMap?.[line]
+        if (episode) {
+            episodeID = episode
+            console.log(`Episode ${episodeID} ${line.trim()}`)
         } else {
-            if (line.match(":")) {
-                // New Dialogue
-                let speaker = line.replace(/\:.*/, "").trim();
-                if (speaker.match(/,| and /)) {
-                    speaker = speaker
-                        .replace(/ and/g, ",")
-                        .replace(/,,/g, ",") // Standardise commas
-                        .split(/, /)
-                        .map(s => s.trim())
-                        .filter(s => s.length > 0)
-                        .sort() // Sort alphabetically to prevent duplicates
-                        .join(", ")
-                }
-                currentSpeaker = speakers?.[speaker] || 0;
-                if (!currentSpeaker) console.warn(`Unknown Speaker ${speaker}`)
-                speakerID = currentSpeaker.toString(16).padStart(3, "0");
-
-                text = line.replace(/^[^:]*: /, "").trim();
-            } else {
-                // Continued Dialogue
+            let text = ""
+            if (line[0] === "[") {
+                // Stage Direction
                 text = line.trim();
+
+                currentSpeaker = speakers?.[text.slice(1, -1)] || 0;
+                speakerID = currentSpeaker.toString(16).padStart(3, "0")
+            } else {
+                if (line.match(":")) {
+                    // New Dialogue
+                    let speaker = line.replace(/\:.*/, "").trim();
+                    if (speaker.match(/,| and /)) {
+                        speaker = speaker
+                            .replace(/ and/g, ",")
+                            .replace(/,,/g, ",") // Standardise commas
+                            .split(/, /)
+                            .map(s => s.trim())
+                            .filter(s => s.length > 0)
+                            .sort() // Sort alphabetically to prevent duplicates
+                            .join(", ")
+                    }
+                    currentSpeaker = speakers?.[speaker] || 0;
+                    if (!currentSpeaker) console.warn(`Unknown Speaker ${speaker}`)
+                    speakerID = currentSpeaker.toString(16).padStart(3, "0");
+
+                    text = line.replace(/^[^:]*: /, "").trim();
+                } else {
+                    // Continued Dialogue
+                    text = line.trim();
+                }
+            }
+            writer.write(`${episodeID}${speakerID} ${text}\n`);
+        }
+    })
+    writer.end()
+    console.log("Finished writing transcript file")
+}
+
+async function getSpeakers() {
+    const outputFile = Bun.file("./speakers.json")
+    const writer = outputFile.writer()
+
+    let speakers = {}
+    let speakersLength = 0
+    let speakerGroups = {}
+    let speakerGroupsLength = 0
+
+    function addSpeaker(speaker) {
+        if (speaker.match(/,| and /)) {
+            let all = speaker
+                .replace(/ and/g, ",").replace(/,,/g, ",") // Standardise commas vs and
+                .split(", ")
+                .map(s => s.trim())
+                .filter(s => s.length > 0)
+                .sort() // Sort alphabetically to prevent duplicates
+
+            let hit = speakerGroups[all.join(", ")]
+            if (!hit) {
+                speakerGroups[all.join(", ")] = ++speakerGroupLength
+            }
+
+        }
+    }
+
+    let episodeID = 101
+    let currentSpeaker = 0
+    let length = 0
+    console.clear()
+    await streamAndIterate("./raw.txt", line => {
+        line = line.trim()
+        let episode = titleMap?.[line]
+        if (episode) {
+            episodeID = episode
+            console.log(`Episode ${episodeID} ${line.trim()}`)
+        } else {
+            let text = ""
+            if (line[0] === "[") {
+                text = line.slice(1, -1).trim(); // Check for speaking in square brackets
+            } else {
+                if (line.match(":")) {
+                    // New Dialogue
+                    let speaker = line.replace(/\:.*/, "").trim();
+                    if (speaker.match(/,| and /)) {
+                        speaker = speaker
+                            .replace(/ and/g, ",")
+                            .replace(/,,/g, ",") // Standardise commas
+                            .split(/, /)
+                            .map(s => s.trim())
+                            .filter(s => s.length > 0)
+                            .sort() // Sort alphabetically to prevent duplicates
+                            .join(", ")
+
+                    }
+                    currentSpeaker = speakers?.[speaker] || 0;
+                    if (!currentSpeaker) speakers[speaker] = ++speakerID
+                }
             }
         }
-        writer.write(`${episodeID}${speakerID}${text}\n`);
-    }
-})
-writer.end()
-console.log("Finished writing transcript file")
+    })
+    writer.write(JSON.stringify(speakers));
+    writer.end()
+    console.log("Finished writing speakers file")
+}
+
+async function createSpeakerMap() {
+    const speakerMap = Object.keys(speakers).map(
+        speaker => speaker.split(", ").map(
+            character => {
+                if (speakers[character]) return speakers[character]
+                console.log(`Unknown character ${character}`)
+            }
+        )
+    )
+
+    const outputFile = Bun.file("./speaker-map.json")
+    const writer = outputFile.writer()
+    writer.write(JSON.stringify(speakerMap));
+    writer.end()
+    console.log("Finished creating speaker map file")
+}
+// await createSpeakerMap()
+await getSpeakers()
